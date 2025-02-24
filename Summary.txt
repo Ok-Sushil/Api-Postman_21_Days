@@ -1,0 +1,5 @@
+✅ Summary of What You Learned Today:
+✔ What is an API & REST API – How APIs work.
+✔ Postman Interface – Navigation & using GET requests.
+✔ GET, POST, PUT, DELETE Methods – Purpose of each method.
+✔ Response Codes & JSON Format – Understanding API responses.

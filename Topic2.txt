@@ -1,0 +1,54 @@
+Topic 2: Exploring API Methods – GET, POST, PUT, DELETE
+Subtopic a: Overview of HTTP Methods
+==========================================================================
+Method	Purpose	Example
+GET	Retrieve data	Get a list of users
+POST	Create new data	Add a new user
+PUT	Update existing data	Update user details
+DELETE	Remove data	Delete a user
+
+
+Subtopic b: POST Request – Sending Data in the Body
+===========================================================================
+✅ Example: Sending a POST request in Postman
+1️⃣ Select POST method
+2️⃣ Enter URL:
+
+https://jsonplaceholder.typicode.com/posts
+3️⃣ Go to Body → Select raw → Choose JSON format
+4️⃣ Enter JSON Data:
+
+{
+  "title": "New Post",
+  "body": "This is a test post",
+  "userId": 1
+}
+5️⃣ Click Send
+6️⃣ View response:
+
+{
+  "id": 101,
+  "title": "New Post",
+  "body": "This is a test post",
+  "userId": 1
+}
+
+
+Subtopic c: Response Codes & JSON Format
+=========================================================
+🔹 Common HTTP Response Status Codes:
+
+Code	Meaning	Example
+200 OK	Request successful	GET request worked
+201 Created	Data created successfully	POST request success
+400 Bad Request	Invalid input	Missing required fields
+401 Unauthorized	Authentication required	Missing API key
+404 Not Found	Resource doesn’t exist	Wrong API URL
+500 Server Error	API failure	Server-side issue
+✅ Example: Checking Response Code in Postman
+1️⃣ Send a GET request to:
+
+https://jsonplaceholder.typicode.com/users
+2️⃣ Check Status Code in Postman
+3️⃣ A 200 OK message means the request was successful!
+

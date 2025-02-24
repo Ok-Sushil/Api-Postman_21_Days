@@ -1,0 +1,73 @@
+Topic 1: Introduction to API Testing & Postman
+Subtopic a: What is an API? – Overview of RESTful APIs
+============================================================
+🔹 API (Application Programming Interface)
+An API allows two applications to communicate with each other.
+
+🔹 Types of APIs:
+✔ REST (Representational State Transfer) – Most commonly used.
+✔ SOAP (Simple Object Access Protocol) – XML-based, older format.
+
+🔹 Key Features of a REST API:
+✔ Uses HTTP methods (GET, POST, PUT, DELETE).
+✔ Communicates using JSON or XML format.
+✔ Uses endpoints (URLs) to perform actions.
+
+📌 Example of a REST API Endpoint:
+https://jsonplaceholder.typicode.com/users
+✅ When you send a GET request to this URL, you get a list of users.
+
+
+
+Subtopic b: Postman Interface – Navigation & Basic Features
+==================================================================================
+🔹 What is Postman?
+Postman is a popular tool for testing APIs. It allows you to send requests and inspect responses.
+
+🔹 Postman Key Features:
+✔ Create and send API requests
+✔ View API responses in JSON format
+✔ Save API requests for future testing
+✔ Automate API testing with scripts
+
+✅ Important Sections in Postman:
+1️⃣ Request Type (GET, POST, etc.) – Choose the HTTP method.
+2️⃣ Request URL – Enter the API endpoint.
+3️⃣ Headers – Add metadata (like authentication tokens).
+4️⃣ Body – Send data in POST/PUT requests.
+5️⃣ Send Button – Executes the request.
+6️⃣ Response Section – Displays the API response.
+
+
+
+Subtopic c: Basic GET Request – Sending a Request & Viewing Response
+===========================================================================================
+✅ Example: Sending a GET request in Postman
+1️⃣ Open Postman
+2️⃣ Select GET method
+3️⃣ Enter URL:
+
+
+https://jsonplaceholder.typicode.com/users
+4️⃣ Click Send
+5️⃣ View response in JSON format
+
+📌 Example Response:
+
+json
+Copy
+Edit
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "leanne@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "ervin@example.com"
+  }
+]
